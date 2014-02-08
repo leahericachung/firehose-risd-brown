@@ -1,16 +1,15 @@
-<div class="steamy-hottub">
+<div class="span6 offset5 text-center steamy-hottub">
 
-	<h2>
-		I love hot tub coding and bacon.
+		<h1 class="custom-font">Add your pic of hot-tub coding
+		</h1>
 
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :hour %>
-			<%= f.input :emotion %>
-			<%= f.input :learned %>
-
-			<%= f.submit 'Save' %>
+			<%= f.input :hour, label: 'Which hour was this?', placeholder: '1, 2, 3, etc.'%>
+			<%= f.input :emotion, label: 'How did you feel?', placeholder: 'Stoked, Excited, Confused' %>
+			<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS3, Rails, Ruby, Github'%>
+		<br/>
+			<%= f.submit 'Save', :class => 'btn btn-warning btn-large' %>
 		<% end %>
 
-	</h2>
 
 </div>
